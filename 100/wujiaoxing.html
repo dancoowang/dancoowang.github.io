@@ -4,21 +4,75 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-         #dv1{
+         #dv1,#dv2,#dv3,#dv4,#dv5{
          	width: 0px;
          	height: 0px;
-         	
          	border-top: 30px solid transparent;
          	border-left: 30px solid transparent;
          	border-right: 30px solid transparent;
          	border-bottom: 80px solid red;
-            
-
+         	position:absolute;
          }
+         #dv1{
+         	left: 180px;
+         	top: 10px;
+         	}s
+          #dv2{
+         	transform:rotate(73deg);
+-ms-transform:rotate(73deg); 	/* IE 9 */
+-moz-transform:rotate(73deg); 	/* Firefox */
+-webkit-transform:rotate(73deg);
+left: 250px;
+top: 70px;
+        }
+
+         #dv3{
+         		transform:rotate(-73deg);
+-ms-transform:rotate(-73deg); 	/* IE 9 */
+-moz-transform:rotate(-73deg); 	/* Firefox */
+-webkit-transform:rotate(-73deg);
+left: 110px;
+top: 70px;
+         }
+
+         #dv4{
+         		transform:rotate(135deg);
+-ms-transform:rotate(135deg); 	/* IE 9 */
+-moz-transform:rotate(135deg); 	/* Firefox */
+-webkit-transform:rotate(135deg);
+left: 230px;
+top: 140px;
+         }
+
+         #dv5{
+       	transform:rotate(-135deg);
+-ms-transform:rotate(-135deg); 	/* IE 9 */
+-moz-transform:rotate(-135deg); 	/* Firefox */
+-webkit-transform:rotate(-135deg);
+left: 130px;
+top: 140px;
+         }
+         #dv6{
+         	width: 40px;
+         	height: 50px;
+         	background: red;
+         	position: absolute;
+         	left: 190px;
+         	top: 120px;
+         	z-index: 999;
+         }
+
 
 	</style>
 </head>
 <body>
 	<div id="dv1"></div>
+	<div id="dv2"></div>
+	<div id="dv3"></div>
+	<div id="dv4"></div>
+	<div id="dv5"></div>
+	<div id="dv6"></div>
+
+
 </body>
 </html>
