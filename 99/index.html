@@ -58,6 +58,7 @@ background: #fff;
  	-moz-border-radius: 10em 10em 10em 10em;
     -webkit-border-radius: 10em 10em 10em 10em;
     margin: 50px 40px 0px; 
+    z-index: 999;
 
 }
 
@@ -71,7 +72,7 @@ background: red;
     margin-top:6px 
 
 }
-#dv8,#dv9,#dv10{
+#dv8{
 	width: 50px;
 	height: 1px;
 	background: red;
@@ -81,7 +82,12 @@ background: red;
 -webkit-transform:rotate(10deg); /* Safari 和 Chrome */
 -o-transform:rotate(10deg);
 margin-top:10px; 
+position: absolute;
+left: 55px;
+top:50px;
+
 }
+
 #dv9{
 	width: 50px;
 	height: 1px;
@@ -91,7 +97,12 @@ margin-top:10px;
 -moz-transform:rotate(20deg); 	/* Firefox */
 -webkit-transform:rotate(20deg); /* Safari 和 Chrome */
 -o-transform:rotate(20deg);
-margin-top:10px; }
+margin-top:10px; 
+position: absolute;
+left: 55px;
+top:60px;
+
+}
  #dv10{
 	width: 50px;
 	height: 1px;
@@ -102,6 +113,57 @@ margin-top:10px; }
 -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
 -o-transform:rotate(30deg);
 margin-top:10px; 
+position: absolute;
+left: 55px;
+top:70px;
+}
+
+
+
+
+
+#dv11{
+	width: 50px;
+	height: 1px;
+	background: red;
+	transform:rotate(-10deg);
+-ms-transform:rotate(-10deg); 	/* IE 9 */
+-moz-transform:rotate(-10deg); 	/* Firefox */
+-webkit-transform:rotate(-10deg); /* Safari 和 Chrome */
+-o-transform:rotate(-10deg);
+margin-top:10px; 
+position: absolute;
+left: 0px;
+top:50px;
+}
+#dv12{
+	width: 50px;
+	height: 1px;
+	background: red;
+	transform:rotate(-20deg);
+-ms-transform:rotate(-20deg); 	/* IE 9 */
+-moz-transform:rotate(-20deg); 	/* Firefox */
+-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+-o-transform:rotate(-20deg);
+margin-top:10px; 
+position: absolute;
+left: 0px;
+top:60px;
+
+}
+ #dv13{
+	width: 50px;
+	height: 1px;
+	background: red;
+	transform:rotate(-30deg);
+-ms-transform:rotate(-30deg); 	/* IE 9 */
+-moz-transform:rotate(-30deg); 	/* Firefox */
+-webkit-transform:rotate(-30deg); /* Safari 和 Chrome */
+-o-transform:rotate(-30deg);
+margin-top:10px; 
+position: absolute;
+left: 0px;
+top:70px;
 }
 
 	</style>
@@ -118,6 +180,10 @@ margin-top:10px;
 	<div id="dv8"></div>
 	<div id="dv9"></div>
 	<div id="dv10"></div>
+
+	<div id="dv11"></div>
+	<div id="dv12"></div>
+	<div id="dv13"></div>
 
 	</div>
 
