@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
+	  *{
+	  	margin: 0;
+	  	padding: 0;
+	  }
           #box{
           	width: 100px;
           	height: 100px;
@@ -12,31 +16,35 @@
           	-o-animation:box 5s;
           	-moz-animation:box 5s;
           	-webkit-animation:box 5s;
+          	animation-direction:alternate;
+          	animation-iteration-count:infinite;
+          	position: relative;
           }
-          @keyframes box{
-             0%     {background: red}
-             25%    {background: blue}
-             50%    {background: green}
-             75%    {background: yellow}
-             100%   {background: #fff}}
+             @keyframes box{
+             0%     {background: red;left:0px;top:0px;}
+             25%    {background: blue;left:0px;top:200px;}
+             50%    {background: green;left:200px;top:200px;}
+             75%    {background: yellow;left:200px;top:0px;}
+             100%   {background: #fff;left:0px;top:0px;}
+         }
              @-0-keyframes box{
-             0%     {background: red}
-             25%    {background: blue}
-             50%    {background: green}
-             75%    {background: yellow}
-             100%   {background: #fff}}
+             0%     {background: red;left:0px;top:0px;}
+             25%    {background: blue;left:0px;top:200px;}
+             50%    {background: green;left:200px;top:200px;}
+             75%    {background: yellow;left:200px;top:0px;}
+             100%   {background: #fff;left:0px;top:0px;}}
              @-webkit-keyframes box{
-             0%     {background: red}
-             25%    {background: blue}
-             50%    {background: green}
-             75%    {background: yellow}
-             100%   {background: #fff}}
+             0%     {background: red;left:0px;top:0px;}
+             25%    {background: blue;left:0px;top:200px;}
+             50%    {background: green;left:200px;top:200px;}
+             75%    {background: yellow;left:200px;top:0px;}
+             100%   {background: #fff;left:0px;top:0px;}}
              @-moz-keyframes box{
-             0%     {background: red}
-             25%    {background: blue}
-             50%    {background: green}
-             75%    {background: yellow}
-             100%   {background: #fff}}
+             0%     {background: red;left:0px;top:0px;}
+             25%    {background: blue;left:0px;top:200px;}
+             50%    {background: green;left:200px;top:200px;}
+             75%    {background: yellow;left:200px;top:0px;}
+             100%   {background: #fff;left:0px;top:0px;}}
 
 	</style>
 </head>
