@@ -5,8 +5,38 @@
 	<title>Document</title>
 	<style type="text/css">
           #box{
-          	
+          	width: 100px;
+          	height: 100px;
+          	background: #000;
+          	animation:box 5s;
+          	-o-animation:box 5s;
+          	-moz-animation:box 5s;
+          	-webkit-animation:box 5s;
           }
+          @keyframes box{
+             0%     {background: red}
+             25%    {background: blue}
+             50%    {background: green}
+             75%    {background: yellow}
+             100%   {background: #fff}}
+             @-0-keyframes box{
+             0%     {background: red}
+             25%    {background: blue}
+             50%    {background: green}
+             75%    {background: yellow}
+             100%   {background: #fff}}
+             @-webkit-keyframes box{
+             0%     {background: red}
+             25%    {background: blue}
+             50%    {background: green}
+             75%    {background: yellow}
+             100%   {background: #fff}}
+             @-moz-keyframes box{
+             0%     {background: red}
+             25%    {background: blue}
+             50%    {background: green}
+             75%    {background: yellow}
+             100%   {background: #fff}}
 
 	</style>
 </head>
