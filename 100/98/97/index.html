@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景移动</title>
+	<style>
+	#animate-area { 
+		background: red;
+  width: 560px; 
+  height: 400px; 
+  background:url(img/1.jpg) no-repeat,red;
+  background-position: 0px 0px;
+  animation-iteration-count:infinite;
+
+  animation: animatedBackground 10s linear infinite;
+ }
+
+ @keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+ 
+}
+</style>
+</head>
+<body>
+	<div id="animate-area">
+	</div>
+</body>
+</html>
